@@ -51,7 +51,7 @@ public final class NumberList<N extends Number> implements List<N>, RandomAccess
 
     public static final class ListFactory<N extends Number> extends StrategyBuilder<N, NumberList<N>, ListFactory<N>> {
 
-        ListFactory(final DenseArray.Factory<N> denseFactory) {
+        public ListFactory(final DenseArray.Factory<N> denseFactory) {
             super(denseFactory);
         }
 
