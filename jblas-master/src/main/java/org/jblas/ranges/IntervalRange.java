@@ -89,4 +89,16 @@ public class IntervalRange implements Range {
   public String toString() {
     return String.format("<Interval Range from %d to %d, length %d index=%d value=%d>", start, end, length(), index(), value());
   }
+
+public void setValue(int value) {
+	this.value = value;
+}
+
+public void setEnd(int end) {
+	this.end = end;
+}
+
+public void setStart(int start) {
+	this.start = start;
+}
 }

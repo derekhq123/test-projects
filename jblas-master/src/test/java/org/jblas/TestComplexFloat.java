@@ -93,4 +93,8 @@ public class TestComplexFloat  {
     assertEquals(new ComplexFloat(0.0f, 3.0f), new ComplexFloat(-9.0f).sqrt());
     assertEquals(new ComplexFloat(1.0f, -4.0f), new ComplexFloat(-15.0f, -8.0f).sqrt());
   }
+
+public void setA(ComplexFloat a) {
+	this.a = a;
+}
 }

@@ -411,4 +411,8 @@ public class ComplexDouble {
   public boolean isImag() {
     return r == 0.0;
   }
+
+public void setR(double r) {
+	this.r = r;
+}
 }

@@ -65,4 +65,12 @@ class Timer {
     double elapsedSeconds() {
         return (stopTime - startTime) / 1e9;
     }
+
+	public void setStopTime(long stopTime) {
+		this.stopTime = stopTime;
+	}
+
+	public void setStartTime(long startTime) {
+		this.startTime = startTime;
+	}
 }

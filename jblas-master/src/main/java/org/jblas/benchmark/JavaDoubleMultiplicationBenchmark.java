@@ -48,7 +48,7 @@ class JavaDoubleMultiplicationBenchmark implements Benchmark {
     }
 
     /** Compute C = A * B */
-    private void mmuli(int n, double[] A, double[] B, double[] C) {
+    public void mmuli(int n, double[] A, double[] B, double[] C) {
         for (int i = 0; i < n * n; i++) {
             C[i] = 0;
         }

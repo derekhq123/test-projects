@@ -123,7 +123,7 @@ public class TestBlasDouble {
   /**
    * Compare double buffer against an array of doubles
    */
-  private boolean arraysEqual(double[] a, double... b) {
+  public boolean arraysEqual(double[] a, double... b) {
     if (a.length != b.length)
       return false;
     else {

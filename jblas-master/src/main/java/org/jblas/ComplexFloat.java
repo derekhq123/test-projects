@@ -411,4 +411,8 @@ public class ComplexFloat {
   public boolean isImag() {
     return r == 0.0f;
   }
+
+public void setR(float r) {
+	this.r = r;
+}
 }

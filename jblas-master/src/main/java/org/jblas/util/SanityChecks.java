@@ -187,11 +187,15 @@ public class SanityChecks {
         printSummary();
     }
 
-    private static void printSummary() {
+    public static void printSummary() {
         if (checksFailed == 0) {
             System.out.println("Sanity checks passed.");
         } else {
             System.out.println("Sainty checks FAILED!");
         }
     }
+
+	public void setChecksFailed(int checksFailed) {
+		this.checksFailed = checksFailed;
+	}
 }

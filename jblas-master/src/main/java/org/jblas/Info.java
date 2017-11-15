@@ -9,4 +9,8 @@ package org.jblas;
  */
 public class Info {
   public static String VERSION = "1.2.4";
+
+public void setVERSION(String VERSION) {
+	this.VERSION = VERSION;
+}
 }

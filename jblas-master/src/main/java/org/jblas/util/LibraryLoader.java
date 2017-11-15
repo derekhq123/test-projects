@@ -186,7 +186,7 @@ public class LibraryLoader {
     loadLibraryFromStream(libname, is);
   }
 
-  private InputStream findLibrary(String[] paths, String libname) {
+  public InputStream findLibrary(String[] paths, String libname) {
     InputStream is = null;
     for (String path : paths) {
       is = tryPath(path + libname);
@@ -202,14 +202,14 @@ public class LibraryLoader {
   /**
    * Translate all those Windows to "Windows". ("Windows XP", "Windows Vista", "Windows 7", etc.)
    */
-  private static String unifyOSName(String osname) {
+  public static String unifyOSName(String osname) {
     if (osname.startsWith("Windows")) {
       return "Windows";
     }
     return osname;
   }
 
-  private static String getUnifiedOSName() {
+  public static String getUnifiedOSName() {
     return unifyOSName(System.getProperty("os.name"));
   }
 
@@ -217,7 +217,7 @@ public class LibraryLoader {
    * Compute the path to the library. The path is basically
    * "/" + os.name + "/" + os.arch + "/" + libname.
    */
-  private String fatJarLibraryPath(String linkage, String flavor) {
+  public String fatJarLibraryPath(String linkage, String flavor) {
     String sep = "/"; //System.getProperty("file.separator");
     String os_name = getUnifiedOSName();
     String os_arch = System.getProperty("os.arch");
@@ -230,12 +230,12 @@ public class LibraryLoader {
   /**
    * Try to open a file at the given position.
    */
-  private InputStream tryPath(String path) {
+  public InputStream tryPath(String path) {
     Logger.getLogger().debug("Trying path \"" + path + "\".");
     return getClass().getResourceAsStream(path);
   }
 
-  private File createTempFile(String name) throws IOException {
+  public File createTempFile(String name) throws IOException {
     return new File(tempDir + File.separator + name);
   }
 
@@ -246,7 +246,7 @@ public class LibraryLoader {
    * @param libname name of the library (just used in constructing the library name)
    * @param is      InputStream pointing to the library
    */
-  private void loadLibraryFromStream(String libname, InputStream is) {
+  public void loadLibraryFromStream(String libname, InputStream is) {
     try {
       File tempfile = createTempFile(libname);
       OutputStream os = new FileOutputStream(tempfile);
@@ -280,4 +280,16 @@ public class LibraryLoader {
       throw ule;
     }
   }
+
+public void setTempDir(File tempDir) {
+	this.tempDir = tempDir;
+}
+
+public void setLibpath(String libpath) {
+	this.libpath = libpath;
+}
+
+public void setLogger(Logger logger) {
+	this.logger = logger;
+}
 }

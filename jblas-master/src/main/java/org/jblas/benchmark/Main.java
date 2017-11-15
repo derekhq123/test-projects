@@ -135,4 +135,8 @@ public class Main {
             }
         }
     }
+
+	public void setMultiplicationBenchmarks(Benchmark[] multiplicationBenchmarks) {
+		this.multiplicationBenchmarks = multiplicationBenchmarks;
+	}
 }

@@ -86,4 +86,20 @@ public class AllRange implements Range {
   public String toString() {
     return String.format("<AllRange from %d to %d, with length %d, index=%d, value=%d>", lower, upper, length(), index(), value());
   }
+
+public void setCounter(int counter) {
+	this.counter = counter;
+}
+
+public void setValue(int value) {
+	this.value = value;
+}
+
+public void setUpper(int upper) {
+	this.upper = upper;
+}
+
+public void setLower(int lower) {
+	this.lower = lower;
+}
 }

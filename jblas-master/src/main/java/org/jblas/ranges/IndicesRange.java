@@ -92,4 +92,12 @@ public class IndicesRange implements Range {
     public boolean hasMore() {
         return counter < indices.length;
     }
+
+	public void setCounter(int counter) {
+		this.counter = counter;
+	}
+
+	public void setIndices(int[] indices) {
+		this.indices = indices;
+	}
 }

@@ -340,17 +340,17 @@ public class ComplexDoubleMatrix {
 		return get(rindices.findIndices(), cindices.findIndices());
 	}
 	
-	private void checkLength(int l) {
+	public void checkLength(int l) {
 		if (length != l)
 			throw new SizeException("Matrix does not have the necessary length (" + length + " != " + l + ").");
 	}
 
-	private void checkRows(int r) {
+	public void checkRows(int r) {
 		if (rows != r)
 			throw new SizeException("Matrix does not have the necessary length (" + length + " != " + r + ").");
 	}
 	
-	private void checkColumns(int c) {
+	public void checkColumns(int c) {
 		if (columns != c)
 			throw new SizeException("Matrix does not have the necessary length (" + length + " != " + c + ").");
 	}
@@ -1007,7 +1007,7 @@ public class ComplexDoubleMatrix {
 	 * Ensures that the result vector has the same length as this. If not,
 	 * resizing result is tried, which fails if result == this or result == other.
 	 */
-	private void ensureResultLength(ComplexDoubleMatrix other, ComplexDoubleMatrix result) {
+	public void ensureResultLength(ComplexDoubleMatrix other, ComplexDoubleMatrix result) {
 		if (!sameLength(result)) {
 			if (result == this || result == other)
 				throw new SizeException("Cannot resize result matrix because it is used in-place.");
@@ -2091,4 +2091,20 @@ public class ComplexDoubleMatrix {
 	   return xori(new ComplexDouble(value));
 	 }
 //RJPP-END--------------------------------------------------------------
+
+	public void setData(double[] data) {
+		this.data = data;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public void setColumns(int columns) {
+		this.columns = columns;
+	}
+
+	public void setRows(int rows) {
+		this.rows = rows;
+	}
 }

@@ -53,7 +53,7 @@ public class Logger {
     private static Logger theLogger = new Logger();
     private int level;
 
-    private Logger() {
+    public Logger() {
         level = INFO;
     }
 
@@ -90,4 +90,8 @@ public class Logger {
     public void setLevel(int level) {
         this.level = level;
     }
+
+	public void setTheLogger(Logger theLogger) {
+		this.theLogger = theLogger;
+	}
 }

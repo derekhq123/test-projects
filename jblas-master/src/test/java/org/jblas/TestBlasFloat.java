@@ -123,7 +123,7 @@ public class TestBlasFloat {
   /**
    * Compare float buffer against an array of floats
    */
-  private boolean arraysEqual(float[] a, float... b) {
+  public boolean arraysEqual(float[] a, float... b) {
     if (a.length != b.length)
       return false;
     else {

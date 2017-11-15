@@ -89,4 +89,8 @@ public class ArchFlavor {
     public static void overrideArchFlavor(String flavor) {
         fixedFlavor = flavor;
     }
+
+	public void setFixedFlavor(String fixedFlavor) {
+		this.fixedFlavor = fixedFlavor;
+	}
 }

@@ -41,4 +41,8 @@ public class RangeTest {
     assertEquals(new DoubleMatrix(3, 2, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0), A.get(all(), interval(1, 3)));
     assertEquals(new DoubleMatrix(2, 1, 11.0, 12.0), A.get(interval(1, 3), point(3)));
   }
+
+public void setA(DoubleMatrix A) {
+	this.A = A;
+}
 }

@@ -547,6 +547,15 @@ public class NativeBlas {
     info = ssygvx(itype, jobz, range, uplo, n, a, aIdx, lda, b, bIdx, ldb, vl, vu, il, iu, abstol, m, mIdx, w, wIdx, z, zIdx, ldz, work, 0, lwork, iwork, iworkIdx, ifail, ifailIdx);
     return info;
   }
+public void setFloatDummy(float[] floatDummy) {
+	this.floatDummy = floatDummy;
+}
+public void setDoubleDummy(double[] doubleDummy) {
+	this.doubleDummy = doubleDummy;
+}
+public void setIntDummy(int[] intDummy) {
+	this.intDummy = intDummy;
+}
 
 
 }

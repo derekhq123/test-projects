@@ -754,4 +754,8 @@ public class TestFloatMatrix extends AbstractTestJblas {
     FloatMatrix m3 = m.getColumns(new org.jblas.ranges.IndicesRange(new int[] {0, 1, 0}));
     assertEquals("[1, 2, 1; 4, 5, 4; 7, 8, 7; 10, 11, 10]", m3.toString("%.0f"));
   }
+
+public void setA(FloatMatrix A) {
+	this.A = A;
+}
 }

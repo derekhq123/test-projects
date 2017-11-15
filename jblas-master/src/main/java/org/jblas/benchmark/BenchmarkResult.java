@@ -56,4 +56,16 @@ class BenchmarkResult {
                 iterations,
                 duration);
     }
+
+	public void setIterations(int iterations) {
+		this.iterations = iterations;
+	}
+
+	public void setDuration(double duration) {
+		this.duration = duration;
+	}
+
+	public void setNumOps(long numOps) {
+		this.numOps = numOps;
+	}
 }

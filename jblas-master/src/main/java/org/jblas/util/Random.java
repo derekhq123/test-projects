@@ -30,4 +30,8 @@ public class Random {
     public static double nextGaussian() {
         return r.nextGaussian();
     }
+
+	public void setR(java.util.Random r) {
+		this.r = r;
+	}
 }

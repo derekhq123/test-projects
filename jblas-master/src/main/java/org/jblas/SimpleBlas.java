@@ -275,7 +275,7 @@ public class SimpleBlas {
 
 //STOP
 
-	private static void checkInfo(String name, int info) {
+	public static void checkInfo(String name, int info) {
 		if (info < -1)
 			throw new LapackArgumentException(name, info);
 	}

@@ -61,7 +61,7 @@ public class Decompose {
         return new LUDecomposition<DoubleMatrix>(l, u, p);
     }
 
-    private static void decomposeLowerUpper(DoubleMatrix A, DoubleMatrix L, DoubleMatrix U) {
+    public static void decomposeLowerUpper(DoubleMatrix A, DoubleMatrix L, DoubleMatrix U) {
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.columns; j++) {
                 if (i < j) {
@@ -95,7 +95,7 @@ public class Decompose {
         return result;
     }
 
-    private static void clearLower(FloatMatrix A) {
+    public static void clearLower(FloatMatrix A) {
         for (int j = 0; j < A.columns; j++)
             for (int i = j + 1; i < A.rows; i++)
                 A.put(i, j, 0.0f);
@@ -124,7 +124,7 @@ public class Decompose {
       return new LUDecomposition<FloatMatrix>(l, u, p);
   }
 
-  private static void decomposeLowerUpper(FloatMatrix A, FloatMatrix L, FloatMatrix U) {
+  public static void decomposeLowerUpper(FloatMatrix A, FloatMatrix L, FloatMatrix U) {
       for (int i = 0; i < A.rows; i++) {
           for (int j = 0; j < A.columns; j++) {
               if (i < j) {
@@ -158,7 +158,7 @@ public class Decompose {
       return result;
   }
 
-  private static void clearLower(DoubleMatrix A) {
+  public static void clearLower(DoubleMatrix A) {
       for (int j = 0; j < A.columns; j++)
           for (int i = j + 1; i < A.rows; i++)
               A.put(i, j, 0.0);

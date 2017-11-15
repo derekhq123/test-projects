@@ -83,4 +83,12 @@ public class PointRange implements Range {
   public String toString() {
     return String.format("<PointRange at=%d>", value);
   }
+
+public void setConsumed(boolean consumed) {
+	this.consumed = consumed;
+}
+
+public void setValue(int value) {
+	this.value = value;
+}
 }

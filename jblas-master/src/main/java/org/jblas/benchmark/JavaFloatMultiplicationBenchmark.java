@@ -48,7 +48,7 @@ class JavaFloatMultiplicationBenchmark implements Benchmark {
     }
 
     /** Compute C = A * B */
-    private void mmuli(int n, float[] A, float[] B, float[] C) {
+    public void mmuli(int n, float[] A, float[] B, float[] C) {
         for (int i = 0; i < n * n; i++) {
             C[i] = 0;
         }

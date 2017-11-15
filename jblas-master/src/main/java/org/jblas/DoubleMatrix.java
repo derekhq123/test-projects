@@ -454,11 +454,11 @@ public class DoubleMatrix implements Serializable {
     /**
      * Serialization
      */
-    private void writeObject(ObjectOutputStream s) throws IOException {
+    public void writeObject(ObjectOutputStream s) throws IOException {
         s.defaultWriteObject();
     }
 
-    private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {
+    public void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {
         s.defaultReadObject();
     }
 
@@ -1620,7 +1620,7 @@ public class DoubleMatrix implements Serializable {
      * Ensures that the result vector has the same length as this. If not,
      * resizing result is tried, which fails if result == this or result == other.
      */
-    private void ensureResultLength(DoubleMatrix other, DoubleMatrix result) {
+    public void ensureResultLength(DoubleMatrix other, DoubleMatrix result) {
         if (!sameLength(result)) {
             if (result == this || result == other) {
                 throw new SizeException("Cannot resize result matrix because it is used in-place.");
@@ -3531,4 +3531,20 @@ public class DoubleMatrix implements Serializable {
     public ComplexDoubleMatrix toComplex() {
       return new ComplexDoubleMatrix(this);
     }
+
+	public void setData(double[] data) {
+		this.data = data;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public void setColumns(int columns) {
+		this.columns = columns;
+	}
+
+	public void setRows(int rows) {
+		this.rows = rows;
+	}
 }
