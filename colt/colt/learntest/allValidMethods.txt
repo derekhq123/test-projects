@@ -341,7 +341,6 @@ cern.colt.matrix.linalg.Property.isDiagonallyDominantByRow.473
 cern.colt.matrix.linalg.Property.isStrictlyTriangular.624
 cern.colt.matrix.linalg.Property.isUnitTriangular.687
 cern.colt.matrix.linalg.Property.toString.972
-cern.colt.matrix.linalg.SingularValueDecomposition.SingularValueDecomposition.51
 cern.colt.matrix.linalg.SingularValueDecomposition.rank.516
 cern.colt.matrix.linalg.SmpBlas.allocateBlas.90
 cern.colt.matrix.linalg.SmpBlas.dgemm.169
@@ -353,7 +352,6 @@ cern.colt.matrix.linalg.Algebra.permuteRows.359
 cern.colt.matrix.linalg.Algebra.pow.403
 cern.colt.matrix.linalg.Algebra.subMatrix.514
 cern.colt.matrix.linalg.Algebra.subMatrix.540
-cern.colt.matrix.linalg.EigenvalueDecomposition.EigenvalueDecomposition.76
 cern.colt.matrix.linalg.EigenvalueDecomposition.getD.136
 cern.colt.matrix.linalg.EigenvalueDecomposition.hqr2.183
 cern.colt.matrix.linalg.EigenvalueDecomposition.orthes.622
@@ -361,7 +359,6 @@ cern.colt.matrix.linalg.EigenvalueDecomposition.tql2.750
 cern.colt.matrix.linalg.EigenvalueDecomposition.tred2.870
 cern.colt.matrix.linalg.SeqBlas.drotg.90
 cern.colt.matrix.linalg.SeqBlas.dtrmv.165
-cern.colt.matrix.linalg.QRDecomposition.QRDecomposition.52
 cern.colt.matrix.linalg.QRDecomposition.hasFullRank.172
 cern.colt.matrix.linalg.LUDecompositionQuick.decompose.87
 cern.colt.matrix.linalg.LUDecompositionQuick.decompose.184
@@ -410,7 +407,6 @@ cern.jet.stat.Descriptive.moment.565
 cern.jet.stat.Descriptive.rankInterpolated.707
 cern.jet.stat.Descriptive.sumOfPowerDeviations.1004
 cern.jet.stat.quantile.QuantileFinderFactory.newDoubleQuantileFinder.330
-corejava.Format.Format.86
 corejava.Format.atol.241
 corejava.Format.parseLong.255
 corejava.Format.atof.284
@@ -425,6 +421,5 @@ hep.aida.bin.DynamicBin1D.includes.256
 hep.aida.bin.DynamicBin1D.removeAllOf.414
 hep.aida.bin.DynamicBin1D.sample.439
 hep.aida.bin.DynamicBin1D.sort.642
-hep.aida.ref.VariableAxis.VariableAxis.25
 hep.aida.ref.VariableAxis.toString.87
 hep.aida.ref.Converter.toString.113
